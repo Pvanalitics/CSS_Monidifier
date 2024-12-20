@@ -2616,41 +2616,13 @@ html {
     font-family: Jupiter, sans-serif;
     font-size: var(--font-title-about);
     max-width: 1019px;
-    position: relative;
   }
-  
-  #p-partner-company .rooms__bglogo{
-    position: absolute;
-    width: 562px;
-    right: 0;
-    top: 50%;
-  }
-  
-  @media (max-width: 1280px) {
-    #p-partner-company .rooms__bglogo{
-      position: absolute;
-      width: 388px;
-      right: 0;
-      top: 55%;
-    }
-  }
-  
-  @media (max-width: 375px) {
-    #p-partner-company .rooms__bglogo{
-          position: absolute;
-          width: 240px;
-          right: 0;
-          top: 43%;
-    }
-  }
-  
   #p-partner-company .company__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     max-width: 1519px;
     justify-content: center;
-    position: relative;
   }
   #p-partner-company .company__class {
     align-items: center;
@@ -2663,7 +2635,6 @@ html {
     justify-content: center;
     width: 357px;
     padding: 0 60px;
-    background: #FFFFFF;
   }
   
   #p-news-detail-news {
@@ -2828,11 +2799,21 @@ html {
     padding: 127px 0 67px;
     text-align: center;
   }
-  
+  #p-about-soon .soon__wrapper h2 {
+    font-family: Jupiter, sans-serif;
+    font-size: var(--font-title-about);
+    line-height: 70px;
+    max-width: 1019px;
+  }
+  #p-about-soon .soon__tiles {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    max-width: 1278px;
+  }
   #p-about-soon .soon__linetile {
     display: grid;
     grid-auto-rows: auto;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 309px 951px;
   }
   #p-about-soon .soon__leadtiles {
     align-items: center;
@@ -2879,13 +2860,39 @@ html {
   }
   #p-about-soon .soon__linetile_2 {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 763px 500px;
   }
   #p-about-soon .soon__linetile_3 {
     display: grid;
-    grid-template-columns: 35% 65%;
+    grid-template-columns: 487px 775px;
   }
-  
+  #p-about-blocks {
+    overflow: hidden;
+  }
+  #p-about-blocks .blocks__wrapper {
+    align-items: center;
+    background: #45494e;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 100px 0;
+  }
+  #p-about-blocks .blocks__wrapper h2 {
+    color: #fff;
+    font-family: Jupiter, sans-serif;
+    font-size: var(--font-title-about);
+    line-height: 70px;
+    max-width: 1019px;
+  }
+  #p-about-blocks .blocks__right {
+    background-color: #808076;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 537px;
+    padding: 30px;
+    width: 1526px;
+  }
   #p-about-blocks .blocks__right img {
     border-radius: 0 0 0 20px;
     height: 477px;
@@ -2905,7 +2912,7 @@ html {
   }
   #p-about-blocks .blocks__desc {
     font-size: var(--font-text-regular);
-    max-width: 669px;
+    width: 669px;
   }
   #p-about-blocks .blocks__button {
     align-items: center;
@@ -2923,7 +2930,27 @@ html {
   #p-about-service {
     overflow: hidden;
   }
-  
+  #p-about-service .service__wrapper {
+    align-items: center;
+    background: #b7b3a8;
+    color: #45494e;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 100px 0;
+    text-align: center;
+  }
+  #p-about-service .service__wrapper h2 {
+    font-family: Jupiter, sans-serif;
+    font-size: var(--font-title-about);
+    line-height: 70px;
+    max-width: 1019px;
+  }
+  #p-about-service .service__gallery {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
   #p-about-service .service__button {
     align-items: center;
     background: #808076;
@@ -2989,8 +3016,7 @@ html {
     grid-template-columns: 50% 50%;
     height: 537px;
     padding: 30px;
-    max-width: 1526px;
-    z-index: 2;
+    width: 1526px;
   }
   #p-arenas-blocks .blocks__left img {
     height: 477px;
@@ -3004,8 +3030,7 @@ html {
     grid-template-columns: 50% 50%;
     height: 537px;
     padding: 30px;
-    max-width: 1526px;
-    z-index: 2;
+    width: 1526px;
   }
   #p-arenas-blocks .blocks__right img {
     border-radius: 0 0 0 20px;
@@ -3026,7 +3051,7 @@ html {
   }
   #p-arenas-blocks .blocks__desc {
     font-size: var(--font-text-regular);
-    max-width: 669px;
+    width: 669px;
   }
   #p-arenas-blocks .blocks__button {
     align-items: center;
@@ -3292,8 +3317,8 @@ html {
     color: #45494e;
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    padding: 100px 0 37px;
+    gap: 60px;
+    padding: 127px 0 67px;
     text-align: center;
   }
   #p-photogallery-title .title__wrapper h1 {
@@ -3330,9 +3355,6 @@ html {
     flex-wrap: wrap;
     gap: 30px;
     text-align: center;
-    justify-content: center;
-    position: relative;
-    z-index: 3;
   }
   
   #p-photogallery-gallery .gallery__photoblock {
@@ -3343,7 +3365,6 @@ html {
   #p-photogallery-gallery .gallery__infoblock {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     gap: 8px;
   }
   #p-photogallery-gallery .gallery__title {
@@ -3361,17 +3382,7 @@ html {
     gap: 24px;
     justify-content: center;
     margin-top: 30px;
-    position: relative;
-    z-index: 3;
   }
-  
-  #p-photogallery-gallery .gallery__imgbg{
-    position: absolute;
-    width: 562px;
-    right: 0;
-    top: 62%;
-  }
-  
   #p-photogallery-gallery .gallery__leftbutton {
     align-items: center;
     background-color: #808076;
@@ -3388,11 +3399,7 @@ html {
     height: 84px;
     line-height: 84px;
     text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 84px;
-    font-size: 26px;
   }
   #p-photogallery-gallery .gallery__rightbutton {
     align-items: center;
@@ -3410,7 +3417,6 @@ html {
     margin: auto;
     max-width: 1522px;
     padding-bottom: 100px;
-    position: relative;
   }
   #p-photogallerycard-gallery .gallery__wrapper {
     align-items: center;
@@ -3419,14 +3425,6 @@ html {
     flex-wrap: wrap;
     gap: 30px;
     text-align: center;
-    justify-content: center;
-  }
-  
-  #p-photogallerycard-gallery .gallery__bgimage{
-    position: absolute;
-    right: 0;
-    width: 562px;
-    top: 60%;
   }
   
   #p-photogallerycard-gallery .gallery__photoblock {
@@ -3828,17 +3826,6 @@ html {
     gap: 8px;
   }
   
-  #p-partner-company .company__bread{
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
-  }
-  
-  #p-partner-company .company__bread hr{
-    width: 32px;
-  }
-  
-  
   #p-contact-maps .contact__whatsapp a img{
     width: 36px;
   }
@@ -4018,34 +4005,16 @@ html {
   
   #p-drying-rooms .rooms__bglogo{
     width: 562px;
+    height: 615px;
     position: absolute;
     z-index: 0;
-    top: 60%;
+    top: 40%;
     right: 0%;
     overflow: hidden;
   }
   
   @media (max-width: 1280px) {
-    #p-drying-rooms .rooms__bglogo{
-      width: 388px;
-      top: 60%;
-      right: 0%;
-    }
-  
-    #p-photogallerycard-gallery .gallery__bgimage{
-      position: absolute;
-      width: 388px;
-      right: 0;
-      top: 52%;
-    }
     
-    #p-photogallery-gallery .gallery__imgbg{
-      position: absolute;
-      width: 388px;
-      right: 0;
-      top: 66%;
-    }
-  
     #p-news-detail-news .news__wrapper h1{
       font-size: 38px;
     }
@@ -4083,26 +4052,7 @@ html {
   }
   
   @media (max-width: 375px) {
-    #p-drying-rooms .rooms__bglogo{
-      width: 244px;
-      top: 60%;
-      right: 0%;
-    }
-  
-    #p-photogallerycard-gallery .gallery__bgimage{
-      position: absolute;
-      width: 244px;
-      right: 0;
-      top: 70%;
-    }
-  
-    #p-photogallery-gallery .gallery__imgbg{
-      position: absolute;
-      width: 240px;
-      right: 0;
-      top: 66%;
-    }
-  
+    
     #p-news-detail-news .news__wrapper h1{
       font-size: 26px;
     }
@@ -4619,4 +4569,54 @@ html {
     }
   
   }
+  
+  
+  
+  @media (max-width: 1280px) {
+    #p-partner-company .company__bread{
+      display: flex;
+      gap: 10px;
+    }
+  
+    #p-partner-company .company__class{
+      height: 198px;
+      width: 366px;
+      padding: 0;
+    }
+    #p-partner-company .company__class{
+      padding: 0 60px;
+    }
+  
+    #p-partner-company .company__wrapper h1 {
+      font-size: 40px;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    #p-partner-company .company__wrapper h1 {
+      font-size: 32px;
+    }
+  
+    #p-partner-company .company__class img{
+      height: 43px;
+    }
+  
+    #p-partner-company .company__wrapper{
+      gap: 10px;
+      padding: 60px 0 20px;
+    }
+  
+    #p-partner-company .company__class{
+      font-size: 6px;
+      padding: 0 0px;
+      border-radius: 13px;
+      width: 156px;
+      height: 85px;
+    }
+  
+    #p-partner-company .company__wrapper h1{
+      font-size: 32px;
+    }
+  }
+  
   
